@@ -2,5 +2,10 @@
   "name": "Lab5",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "build:image": "docker build . -t client-server",
+    "build:contrainer": "docker run --name hw-7 client-server"
+  }
 }
